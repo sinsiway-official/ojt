@@ -4,11 +4,46 @@
 
 7/11(월)-16(금)
 
-##
+## 문의 사항
 
-카카오톡 오픈톡 링크 : https://open.kakao.com/o/gFS0XCpe
+카카오톡 오픈 채팅 링크 : https://open.kakao.com/o/gFS0XCpe
 
-## 키 정보
+## 과제
+
+KEY ID, KEY NAME 로 호출되는 C, JAVA API 기능 검증 테스트 프로그램<br>
+모든 알고리즘에 대한 라이브러리 pass, fail 테스트 및 리포트.
+
+## 환경 구성
+
+### 소스코드
+
+github : https://github.com/sinsiway-official/ojt<br>
+저장소에 각 사용자 별 브런치 개별 사용.<br>
+<br>
+저장소 commit 시 id password 입력 부분에 public password 사용.<br>
+Username: dhkim(본인 이름)<br>
+Password: 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<br>
+
+### 테스트 환경
+
+server ip : 192.168.10.94
+
+| id      | password | 사용자 |
+| ------- | -------- | ------ |
+| ymseo   | sinsiway | 서영민 |
+| sjchoi  | sinsiway | 최서진 |
+| swhwang | sinsiway | 황상원 |
+
+### 라이브러리 경로
+
+```bash
+$ cd /tmp/ojtLibrary
+$ ls
+libpcapi.so libpcjapi.so
+$ cp /tmp/ojtLibrary/* {다운받은 git 경로}
+```
+
+### 키 정보
 
 | 알고리즘 | KEY ID | KEY NAME | 비고   |
 | -------- | ------ | -------- | ------ |
@@ -24,24 +59,9 @@
 | SHA384   | 410    | SHA384   | 단방향 |
 | SHA512   | 420    | SHA512   | 단방향 |
 
-## 과제
-
-위 키 정보를 사용해 KEY ID, KEY NAME 로 호출되는 C, JAVA API 기능 검증 테스트 프로그램
-
-## 서버 및 계정
-
-server ip : 192.168.10.94
-
-id / password :
-ymseo / sinsiway
-sjchoi / sinsiway
-swhwang / sinsiway
-
-## 제공 파일
-
-libpcjapi.so
+### 테스트
 
 ## 과제 확인 항목
 
-각 알고리즘에 대한 안전한 검증 여부.
+각 알고리즘에 대한 안전한 검증 여부.<br>
 각종 예외 사항에 대한 처리 여부.
