@@ -61,6 +61,22 @@ $ cp /tmp/ojtLibrary/* {다운받은 git 경로}
 
 ### 테스트
 
+```bash
+$ ssh dhkim@192.168.10.94
+$ git clone https://github.com/sinsiway-official/ojt.git ${HOME}/ojt
+
+# 본인 브런치로 변경
+$ git checkout dhkim
+
+# 라이브러리 복사
+$ cp /tmp/ojtLibrary/* ${HOME}/ojt
+
+# 환경 설정 및 테스트
+$ . env.sh
+$ sh runC.sh
+$ sh runJava.sh
+```
+
 ## 과제 확인 항목
 
 각 알고리즘에 대한 안전한 검증 여부.<br>
