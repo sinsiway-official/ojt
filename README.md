@@ -28,11 +28,11 @@ Password: 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<br>
 
 server ip : 192.168.10.94
 
-| id      | password | 사용자 |
-| ------- | -------- | ------ |
-| ymseo   | sinsiway | 서영민 |
-| sjchoi  | sinsiway | 최서진 |
-| swhwang | sinsiway | 황상원 |
+| id      | password | 사용자 | git password                             |
+| ------- | -------- | ------ | ---------------------------------------- |
+| ymseo   | sinsiway | 서영민 | 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 |
+| sjchoi  | sinsiway | 최서진 | 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 |
+| swhwang | sinsiway | 황상원 | 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 |
 
 ### 라이브러리 경로
 
@@ -40,7 +40,6 @@ server ip : 192.168.10.94
 $ cd /tmp/ojtLibrary
 $ ls
 PetraCipherAPI.jar  libpcapi.so  libpcjapi.so
-$ cp /tmp/ojtLibrary/* {다운받은 git 경로}
 ```
 
 ### 키 정보
@@ -66,6 +65,7 @@ $ ssh dhkim@192.168.10.94
 $ git clone https://github.com/sinsiway-official/ojt.git ${HOME}/ojt
 
 # 본인 브런치로 변경
+$ cd ${HOME}/ojt
 $ git checkout dhkim
 
 # 라이브러리 복사
@@ -75,6 +75,34 @@ $ cp /tmp/ojtLibrary/* ${HOME}/ojt
 $ . env.sh
 $ sh runC.sh
 $ sh runJava.sh
+
+# git global 환경 설정
+$ git config --global user.email "dhkim@sinsiway.com"
+$ git config --global user.name "dhkim"
+
+# 테스트 커밋
+$ touch test.commit
+$ git add test.commit
+$ git commit -m 'test commit'
+$ git push
+
+(gnome-ssh-askpass:103375): Gtk-WARNING **: cannot open display:
+error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'
+Username for 'https://github.com': dhkim
+
+(gnome-ssh-askpass:103381): Gtk-WARNING **: cannot open display:
+error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'
+Password for 'https://dhkim@github.com': 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
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 32 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 266 bytes | 266.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sinsiway-official/ojt.git
+   22ae7f1..e3fdd05  dhkim -> dhkim
 ```
 
 ## 과제 확인 항목
