@@ -22,7 +22,7 @@ github : https://github.com/sinsiway-official/ojt<br>
 <br>
 저장소 commit 시 id password 입력 부분에 public password 사용.<br>
 Username: dhkim(본인 이름)<br>
-Password: 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<br>
+Password: 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<br>
 
 ### 테스트 환경
 
