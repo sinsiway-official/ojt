@@ -39,7 +39,7 @@ server ip : 192.168.10.94
 ```bash
 $ cd /tmp/ojtLibrary
 $ ls
-libpcapi.so libpcjapi.so
+PetraCipherAPI.jar  libpcapi.so  libpcjapi.so
 $ cp /tmp/ojtLibrary/* {다운받은 git 경로}
 ```
 
